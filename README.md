@@ -20,6 +20,40 @@ This repository contains the official implementation of our paper:
 
 ---
 
+# Instruction
+
+## Installation
+
+1. Clone any-to-any (https://github.com/microsoft/i-Code)
+
+```
+#clone CoDi anywhere else
+cd ..
+git clone https://github.com/microsoft/i-Code
+
+# bring CoDi to our repo
+cd anytoedit
+mkdir third_party
+mv ../i-Code/i-Code-V3 ./third_party/CoDi
+```
+
+2. Download CoDi checkpoint and place it to ./checkpoints.
+
+https://github.com/microsoft/i-Code/tree/main/i-Code-V3
+
+3. Download our inverse projection layers and place it to ./checkpoints.
+
+https://drive.google.com/file/d/1of9pBAGmAfdfvJ2KXGlOWnPAs6K5V2fb/view?usp=sharing
+
+
+## Inference
+
+Modify ./configs/infer.yaml with your desired data and output path. 
+
+```
+python infer.py
+```
+
 ## 📌 Citation
 If you find this work useful, please consider citing:
 

@@ -1,0 +1,23 @@
+device: 'cuda' 
+precision: 16
+n_timesteps: 50
+pnp_attn_t: 0.5
+pnp_f_t: 0.8
+batch_size: 8
+
+inversion:
+  n_timesteps: 500
+  batch_size: 40
+
+model: 
+  sd_version: '1.5'
+  codi_checkpoint: "./checkpoints/CoDi_encoders.pth"
+  image_size: 512
+
+data:
+  input: {type: "image", data: '/datasets/DAVIS/JPEGImages/Full-Resolution/blackswan/blackswan_00009.jpg'}
+  anchor: {type: "text", data: "a black swan is floating around", cfg_scale: 7.5}
+  negative: {type: "text", data: "ugly, blurry, low res, unrealistic, unaesthetic", cfg_scale: 7.5}
+  condition: [
+    {type: "audio", data: "/datasets/vggsound/audio/raining/_s2eifpL3pM_000080.mp3", cfg_scale: 7.5, token_repeat_times: 50},
+  ]
