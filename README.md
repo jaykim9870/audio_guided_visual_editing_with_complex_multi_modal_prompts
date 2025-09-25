@@ -15,7 +15,6 @@ This repository contains the official implementation of our paper:
 
 ## 🚀 Overview
 - Accepted to **BMVC 2025**.  
-- Resources will be made publicly available in the coming months. Stay tuned!
 - [PIEBench-multi](https://docs.google.com/spreadsheets/d/e/2PACX-1vTAZZ5a02aRxfjTeQmauQ9NvtE1XUeOxI90pdzf5IdDVzM2aQOm8_UtTRHRIdG-Ew/pubhtml)
 - [DAVIS-multi](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3g3Qp-ucEDL9y3DYDlMQFU-fIfGIy1RpRb-QjqlookCaMKpZhJ_LacM0x3R-XOkVigPRiiHW1yXOD/pubhtml)
 
